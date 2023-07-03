@@ -1,0 +1,42 @@
+npx create-react-app ./ # for react
+npm init -y # for node
+npm install dotenv body-parser cors express mongoose nodemon @material-ui/core
+    Note: material-ui/core only works for React 17 and not 18 so use: npm install @mui/material @emotion/react @emotion/styled
+    Also: npm install @mui/styles --legacy-peer-deps
+    npm i @material-ui/core --legacy-peer-deps
+
+    ^ Not using any of these but using stylying scripts instaed
+
+    npm install @reduxjs/toolkit --legacy-peer-deps
+    npm install react-redux --legacy-peer-deps
+    npm install @mui/icons-material --legacy-peer-deps
+
+Enable import of packages by adding this to json:
+"type": "module"
+
+Change start script to "nodemon index.js"
+
+React packages
+npm install axios dotenv moment react-file-base64 redux redux-thunk
+
+mongodb.com/cloud/atlas
+
+Database access -> Add database user
+Network access -> Add ip address
+Click connect button on cluster
+Use the native drivers option for connection
+
+Interesting Observation:
+    Create styles.js where you export an object and then feed that into the styles sheet in React
+
+To use Redux, configre an actions, reducers folder. Then add some logic to index.jsx
+
+import * as api from '../api' <- A way to reference a lot of exported things 
+
+To avoid CROS problem, add "proxy": "http://localhost:5000" to package.json
+
+You can have type={} or onClick={() => ()}
+
+svgbackgrounds.com
+
+Better to print out error itself instaed of error.message
